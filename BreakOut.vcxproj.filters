@@ -65,9 +65,6 @@
     <ClCompile Include="program.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\6基于物理渲染\6基于物理渲染\glad.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="sprite_renderer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -84,6 +81,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="post_processor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OpenGL\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
