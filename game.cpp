@@ -9,7 +9,8 @@
 #include "post_processor.h"
 #include "power_up.h"
 
-#include <iostream>
+// 音频引擎库
+#include <irrKlang/irrKlang.h>
 
 SpriteRenderer* Renderer;
 
@@ -20,6 +21,9 @@ BallObject* Ball;
 ParticleGenerator* Particles;
 
 PostProcessor* Effects;
+
+// 定义音频引擎
+irrklang::ISoundEngine* SoundEngine = irrklang::createIrrKlangDevice();
 
 float ShakeTime = 0.0f;
 
@@ -93,6 +97,9 @@ void Game::Init()
         ResourceManager::GetTexture("particle"),
         500
     );
+
+    // 读取音频
+    SoundEngine->play2D("resources/audio/breakout.mp3", true);
 }
 
 void Game::Update(float dt)
@@ -209,15 +216,20 @@ void Game::DoCollisions()
             Collision collision = CheckCollision(*Ball, box);
             if (std::get<0>(collision))
             {
+                // 小球撞到非刚体砖块
                 if (!box.IsSolid)
                 {
                     box.Destroyed = true;
                     this->SpawnPowerUps(box);
+                    // 播放撞击砖块音效
+                    SoundEngine->play2D("resources/audio/bleep.mp3", false);
                 }
                 else
                 {
                     ShakeTime = 0.05f;
                     Effects->Shake = true;
+                    // 播放撞击刚体音效
+                    SoundEngine->play2D("resources/audio/solid.wav", false);
                 }
                 Direction dir = std::get<1>(collision);
                 glm::vec2 diff_vector = std::get<2>(collision);
@@ -260,7 +272,8 @@ void Game::DoCollisions()
         Ball->Velocity = glm::normalize(Ball->Velocity) * glm::length(oldVelocity);
         Ball->Velocity.y = -1.0f * abs(Ball->Velocity.y);
         Ball->Stuck = Ball->Sticky;
-        int i = 0;
+        // 播放撞击玩家音效
+        SoundEngine->play2D("resources/audio/bleep.wav", false);
     }
 
     // 道具与玩家碰撞检测
@@ -275,6 +288,8 @@ void Game::DoCollisions()
                 ActivatePowerUp(powerUp);
                 powerUp.Destroyed = GL_TRUE;
                 powerUp.Activated = GL_TRUE;
+                // 播放撞击道具音效
+                SoundEngine->play2D("resources/audio/powerup.wav", false);
             }
         }
     }

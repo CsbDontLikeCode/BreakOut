@@ -1,3 +1,3 @@
 ﻿  game.cpp
-D:\OpenGL Learning\BreakOut\game.cpp(173,36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\OpenGL Learning\BreakOut\game.cpp(180,36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   BreakOut.vcxproj -> D:\OpenGL Learning\BreakOut\x64\Debug\BreakOut.exe
