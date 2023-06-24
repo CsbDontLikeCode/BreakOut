@@ -1,2 +1,0 @@
-F:\GameEngine\BreakOut\x64\Debug\BreakOut.exe
-D:\OpenGL Learning\BreakOut\x64\Debug\BreakOut.exe
