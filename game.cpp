@@ -322,15 +322,38 @@ void Game::DoCollisions()
         if (!box.Destroyed)
         {
             Collision collision = CheckCollision(*Ball, box);
+            
             if (std::get<0>(collision))
             {
                 // 小球撞到非刚体砖块
                 if (!box.IsSolid)
                 {
-                    box.Destroyed = true;
-                    this->SpawnPowerUps(box);
-                    // 播放撞击砖块音效
-                    SoundEngine->play2D("resources/audio/bleep.mp3", false);
+                    // 判断当前砖块的剩余可撞击次数
+                    if (box.Color == glm::vec3(0.2f, 0.6f, 1.0f)) 
+                    {
+                        box.Destroyed = true;
+                        this->SpawnPowerUps(box);
+                        // 播放撞击砖块音效
+                        SoundEngine->play2D("resources/audio/bleep.mp3", false);
+                    }
+                    else if (box.Color == glm::vec3(0.0f, 0.7f, 0.0f)) 
+                    {
+                        box.Color = glm::vec3(0.2f, 0.6f, 1.0f);
+                        this->SpawnPowerUps(box);
+                        SoundEngine->play2D("resources/audio/bleep.mp3", false);
+                    }
+                    else if (box.Color == glm::vec3(0.8f, 0.8f, 0.4f)) 
+                    {
+                        box.Color = glm::vec3(0.0f, 0.7f, 0.0f);
+                        this->SpawnPowerUps(box);
+                        SoundEngine->play2D("resources/audio/bleep.mp3", false);
+                    }
+                    else if(box.Color == glm::vec3(1.0f, 0.5f, 0.0f))
+                    {
+                        box.Color = glm::vec3(0.8f, 0.8f, 0.4f);
+                        this->SpawnPowerUps(box);
+                        SoundEngine->play2D("resources/audio/bleep.mp3", false);
+                    }
                 }
                 else
                 {
@@ -460,13 +483,13 @@ bool ShouldSpawn(unsigned int chance)
 
 void Game::SpawnPowerUps(GameObject& block)
 {
-    if (ShouldSpawn(75))
+    if (ShouldSpawn(25))
         this->PowerUps.push_back(PowerUp("speed", glm::vec3(0.5f, 0.5f, 1.0f), 0.0f, block.Position, ResourceManager::GetTexture("tex_speed")));
-    if (ShouldSpawn(75))
+    if (ShouldSpawn(25))
         this->PowerUps.push_back(PowerUp("sticky", glm::vec3(0.5f, 0.5f, 1.0f), 10.0f, block.Position, ResourceManager::GetTexture("tex_sticky")));
-    if (ShouldSpawn(75))
+    if (ShouldSpawn(25))
         this->PowerUps.push_back(PowerUp("pass-through", glm::vec3(0.5f, 1.0f, 0.5f), 10.0f, block.Position, ResourceManager::GetTexture("tex_passthrough")));
-    if (ShouldSpawn(75))
+    if (ShouldSpawn(50))
         this->PowerUps.push_back(PowerUp("pad-size-increase", glm::vec3(1.0f, 0.6f, 0.4), 3.0f, block.Position, ResourceManager::GetTexture("tex_increase")));
     if (ShouldSpawn(25)) // 负面道具被更频繁地生成
         this->PowerUps.push_back(PowerUp("confuse", glm::vec3(1.0f, 0.3f, 0.3f), 3.0f, block.Position, ResourceManager::GetTexture("tex_confuse")));
