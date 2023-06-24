@@ -48,6 +48,9 @@
     <ClInclude Include="PowerUp.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="text_renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -84,6 +87,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\..\OpenGL\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="text_renderer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

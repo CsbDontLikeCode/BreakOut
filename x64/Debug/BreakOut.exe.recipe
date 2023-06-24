@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\GameEngine\BreakOut\x64\Debug\BreakOut.exe</FullPath>
+      <FullPath>D:\OpenGL Learning\BreakOut\x64\Debug\BreakOut.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
