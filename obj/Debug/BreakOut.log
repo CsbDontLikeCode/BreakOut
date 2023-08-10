@@ -1,0 +1,65 @@
+﻿  ball_object_collisions.cpp
+  game.cpp
+E:\Diego\GameEngine\BreakOut\src\game.cpp(250,36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\Diego\GameEngine\BreakOut\src\game.cpp(265,65): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+E:\Diego\GameEngine\BreakOut\src\game.cpp(272,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\Diego\GameEngine\BreakOut\src\game.cpp(275,46): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+  game_level.cpp
+E:\Diego\GameEngine\BreakOut\src\game_level.cpp(46,42): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\Diego\GameEngine\BreakOut\src\game_level.cpp(47,44): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\Diego\GameEngine\BreakOut\src\game_level.cpp(48,76): warning C4244: “初始化”: 从“unsigned int”转换到“float”，可能丢失数据
+  game_object.cpp
+  particle_generator.cpp
+  post_processor.cpp
+  power_up.cpp
+  program.cpp
+E:\Diego\GameEngine\BreakOut\src\program.cpp(48,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  resource_manager.cpp
+  shader.cpp
+  sprite_renderer.cpp
+  text_renderer.cpp
+E:\Diego\GameEngine\BreakOut\src\text_renderer.cpp(73,33): warning C4838: 从“FT_Pos”转换到“unsigned int”需要收缩转换
+  texture.cpp
+  正在生成代码...
+  glad.c
+glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(input.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_joystick.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_time.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_time.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_thread.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_thread.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(vulkan.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(vulkan.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(wgl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(wgl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(egl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(egl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(osmesa_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(osmesa_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftinit.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftinit.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftbase.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftbase.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(autofit.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(autofit.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(truetype.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(truetype.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(type1.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(type1.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(cff.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(cff.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(type1cid.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(type1cid.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(pfr.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(pfr.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(type42.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(type42.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(winfnt.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(winfnt.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(pcf.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(pcf.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(bdf.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(bdf.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(psaux.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(psaux.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(psnames.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(psnames.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(pshinter.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(pshinter.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(sfnt.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(sfnt.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(smooth.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(smooth.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(raster.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(raster.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(sdf.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(sdf.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(svg.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(svg.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftsystem.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftsystem.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftgzip.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftgzip.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftlzw.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftlzw.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftbitmap.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftbitmap.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+freetyped.lib(ftdebug.obj) : warning LNK4099: 未找到 PDB“”(使用“freetyped.lib(ftdebug.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  BreakOut.vcxproj -> E:\Diego\GameEngine\BreakOut\bin\Debug\BreakOut.exe

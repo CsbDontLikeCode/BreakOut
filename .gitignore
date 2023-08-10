@@ -1,3 +1,8 @@
 # Directories
 x64/
 .vs/
+
+# Files
+*.vcxproj
+*.filters
+*.user
