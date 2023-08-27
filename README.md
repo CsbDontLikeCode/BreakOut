@@ -3,7 +3,7 @@ BreakOut小游戏
 
 ## 游戏画面
 <div align = center>
-<img src="https://github.com/CsbDontLikeCode/Game202_Cat/blob/main/imgs/ui.png" width="240">
+<img src="https://github.com/CsbDontLikeCode/BreakOut/blob/main/imgs/ui.png" width="240">
 </div>
 
 ## 游戏玩法介绍
